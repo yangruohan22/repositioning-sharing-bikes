@@ -44,7 +44,7 @@ plt.title('Trip Duration Distribution', fontsize=16)
 plt.xlabel('Duration (minutes)', fontsize=12)
 plt.ylabel('Trip Count', fontsize=12)
 plt.tight_layout()
-plt.savefig('trip_duration_histogram.png')
+plt.savefig('pictures/trip_duration_histogram.png')
 plt.close()
 
 # 2.2 Trip Distance Histogram and Statistics
@@ -66,7 +66,7 @@ plt.title('Trip Distance Distribution', fontsize=16)
 plt.xlabel('Distance (km)', fontsize=12)
 plt.ylabel('Trip Count', fontsize=12)
 plt.tight_layout()
-plt.savefig('trip_distance_histogram.png')
+plt.savefig('pictures/trip_distance_histogram.png')
 plt.close()
 
 # 2.3 Hourly Trip Count Histogram (30-minute intervals)
@@ -99,7 +99,7 @@ plt.title('Trip Count Distribution per Time of Day', fontsize=16)
 plt.xlabel('Time of Day', fontsize=12)
 plt.ylabel('Trip Count', fontsize=12)
 plt.tight_layout()
-plt.savefig('hourly_trip_count.png')
+plt.savefig('pictures/hourly_trip_count.png')
 plt.close()
 
 # 2.4 Daily Bike Usage Histogram and Statistics
@@ -127,7 +127,7 @@ plt.xlabel('Number of Trips Per Day', fontsize=12)
 plt.ylabel('Bike-Days (Number of bikes used X times)', fontsize=12)
 plt.xticks(rotation=0)
 plt.tight_layout()
-plt.savefig('daily_bike_usage.png')
+plt.savefig('pictures/daily_bike_usage.png')
 plt.close()
 
 # 3. Heatmaps and Scatter Plots
@@ -145,7 +145,7 @@ plt.figure(figsize=(10, 8))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f",
             linewidths=.5, vmin=-1, vmax=1)
 plt.title('Variable Correlation Heatmap', fontsize=16)
-plt.savefig('variable_correlation.png')
+plt.savefig('pictures/variable_correlation.png')
 plt.close()
 
 # Plotting the pair plot matrix
@@ -192,7 +192,7 @@ for peak_name, peak_times in peaks.items():
     HeatMap(start_locations, name=f'{peak_name.capitalize()} Peak Start Locations', radius=12, blur=12).add_to(m)
 
     # Save the map to a file
-    filename = f'{peak_name}_peak_heatmap.html'
+    filename = f'pictures/{peak_name}_peak_heatmap.html'
     m.save(filename)
     print(f"Start location heatmap for {peak_name} peak saved as '{filename}'.")
 

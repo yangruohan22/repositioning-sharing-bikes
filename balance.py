@@ -156,7 +156,7 @@ def visualize_supply_demand_balance_grid_all_days(data, lat_range, lon_range, ho
                 )
             ).add_to(geojson_feature_group)
 
-    filename = f'supply_demand_balance_log_scaled_{filename_suffix}_peak.html'
+    filename = f'pictures/supply_demand_balance_log_scaled_{filename_suffix}_peak.html'
     m.save(filename)
     print(f"供需平衡图已保存为 '{filename}'.")
 

@@ -83,7 +83,7 @@ df = df[df['speed_kmh'] <= 30]
 # 4. 数据保存到新文件
 # ----------------------
 # 定义新的输出文件路径和需要导出的列名列表
-selected_output_file_path = "processed_bike_data.xlsx"
+selected_output_file_path = "data/processed_bike_data.xlsx"
 columns_to_export = [
     'bike_id',
     'start_time',
