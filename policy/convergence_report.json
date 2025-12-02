@@ -1,0 +1,42 @@
+{
+  "convergence_metrics": {
+    "total_trials": 5000,
+    "initial_performance": 1432.6666666666667,
+    "best_performance": 1472.6666666666667,
+    "final_performance": 1438.6666666666667,
+    "overall_improvement": 0.02791996277338297,
+    "performance_gap": 34.0,
+    "relative_gap": 0.023087369850611134,
+    "mean_improvement_rate": 4.6313483377010065e-05,
+    "std_improvement_rate": 0.009535543862528455,
+    "performance_stability": 0.005997464112263565,
+    "convergence_detected": false,
+    "convergence_efficiency": 1.0,
+    "exploration_ratio": 0.4610606369685072,
+    "trials_to_90%": 0,
+    "trials_to_95%": 0,
+    "trials_to_99%": 18
+  },
+  "parameter_importance": {
+    "θ⁻_low": 0.42533374080733144,
+    "δ": 0.1697375694037063,
+    "φ": 0.124707368317703,
+    "θ⁻_high_gap": 0.09701283622504733,
+    "τ_L": 0.06968921184772613
+  },
+  "convergence_speed_metrics": {
+    "trials_to_50%": 0,
+    "trials_to_80%": 0,
+    "trials_to_90%": 0,
+    "trials_to_95%": 0,
+    "trials_to_99%": 18,
+    "efficiency_95": 1.0,
+    "early_improvement_rate": 0.026291298278268854,
+    "late_improvement_rate": -0.02153706642484687,
+    "overall_improvement": 0.004187994416007445
+  },
+  "optimization_summary": {
+    "total_trials": 5000,
+    "analysis_timestamp": "2025-12-01T12:47:36.524286"
+  }
+}
